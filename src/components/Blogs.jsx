@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import Blog from './Blog';
 
-function Blogs({ data, handelBookmark }) {
+function Blogs({ data, handelBookmark, handelRead }) {
   return (
     <main className='w-2/3 mx-auto'>
-      {data.map(obj => <Blog key={obj.id} obj={obj} handelBookmark={handelBookmark} ></Blog>)}
+      {data.map(obj => <Blog key={obj.id} obj={obj} handelBookmark={handelBookmark} handelRead={handelRead}></Blog>)}
     </main>
   )
 }
@@ -12,6 +12,7 @@ function Blogs({ data, handelBookmark }) {
 Blogs.propTypes = {
   data: PropTypes.array,
   handelBookmark: PropTypes.func,
+  handelRead: PropTypes.func,
 }
 
 export default Blogs

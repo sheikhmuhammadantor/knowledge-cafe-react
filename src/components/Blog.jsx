@@ -1,7 +1,7 @@
 import { CiBookmark } from "react-icons/ci";
 import PropTypes from 'prop-types';
 
-function Blog({ obj, handelBookmark }) {
+function Blog({ obj, handelBookmark, handelRead }) {
   const { bannerImage, profileImage, fullName, postedDate, readingTime, title, hashtags } = obj;
   return (
     <div className='max-w-3xl space-y-5 mx-auto mb-10 border rounded-md p-6 bg-black pb-12'>
@@ -23,7 +23,7 @@ function Blog({ obj, handelBookmark }) {
       <div className='flex gap-4'>
         {hashtags.map((tag, idx) => <p key={idx} className="underline cursor-pointer">{tag}</p>)}
       </div>
-      <button className='btn text-base btn-primary font-bold' href="#">Mark as Read</button>
+      <button onClick={() => handelRead(obj)} className='btn text-base btn-primary font-bold' href="#">Mark as Read</button>
     </div>
   )
 }
@@ -31,6 +31,7 @@ function Blog({ obj, handelBookmark }) {
 Blog.propTypes = {
   obj: PropTypes.object,
   handelBookmark: PropTypes.func,
+  handelRead: PropTypes.func,
 }
 
 export default Blog
