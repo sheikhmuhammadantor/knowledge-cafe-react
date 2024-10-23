@@ -20,7 +20,7 @@ function App() {
           {/* Blogs Section */}
           <Blogs data={data}></Blogs>
           {/* Bookmarks Section */}
-          <Bookmarks></Bookmarks>
+          <Bookmarks data={data}></Bookmarks>
         </section>
       </section>
     </>
