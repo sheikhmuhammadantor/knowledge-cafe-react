@@ -14,7 +14,14 @@ function App() {
     <>
       <section className="container mx-auto px-2">
         <Header></Header>
-
+        <div className="divider"></div>
+        {/* Main Body Section */}
+        <section className="md:flex justify-center">
+          {/* Blogs Section */}
+          <Blogs data={data}></Blogs>
+          {/* Bookmarks Section */}
+          <Bookmarks></Bookmarks>
+        </section>
       </section>
     </>
   );
