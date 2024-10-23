@@ -1,5 +1,5 @@
 # Knowledge Cafe Project With ReactJS
-# Live Preview [Link]([tasteful-stone.surge.sh](https://tasteful-stone.surge.sh/))
+# Live Preview [Link](https://tasteful-stone.surge.sh/)
 
 ## Using -
 * [ReactJS](https://react.dev/)
