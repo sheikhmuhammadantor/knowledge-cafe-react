@@ -3,6 +3,12 @@ import { Blogs, Bookmarks, Header } from "./components/export";
 
 function App() {
   const [data, setData] = useState([]);
+  const [bookmarks, setBookmarks] = useState([]);
+
+  const handelBookmark = (bookmark) => {
+    const newBookmarks = [...bookmarks, bookmark]
+    setBookmarks(newBookmarks);
+  }
 
   useEffect(() => {
     fetch("Blog.json")
@@ -18,9 +24,9 @@ function App() {
         {/* Main Body Section */}
         <section className="md:flex justify-center">
           {/* Blogs Section */}
-          <Blogs data={data}></Blogs>
+          <Blogs data={data} handelBookmark={handelBookmark}></Blogs>
           {/* Bookmarks Section */}
-          <Bookmarks data={data}></Bookmarks>
+          <Bookmarks bookmarks={bookmarks}></Bookmarks>
         </section>
       </section>
     </>
