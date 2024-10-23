@@ -1,5 +1,17 @@
-# React + Vite
+# Knowledge Cafe Project With ReactJS
+# Live Preview [Link](tasteful-stone.surge.sh)
 
+## Using -
+* [ReactJS](https://react.dev/)
+* [Vite](https://vite.dev/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [DaisyUI](https://daisyui.com/)
+* [PropTypes](https://www.npmjs.com/package/prop-types)
+* [React-Icons](https://react-icons.github.io/react-icons/)
+* [Surge](https://surge.sh/)
+
+
+***
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
